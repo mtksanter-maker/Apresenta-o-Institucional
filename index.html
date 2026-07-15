@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santer Empreendimentos — Apresentação Institucional</title>
+    <meta
+      name="description"
+      content="Apresentação institucional da Santer Empreendimentos."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos estáticos (sem CDN de build) -->
+    <link rel="stylesheet" href="tw.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-navy-950 text-[#f3f6fa]">
+    <div id="app" class="h-screen w-screen overflow-hidden flex flex-col relative">
+      <!-- ===================== NAVEGAÇÃO ===================== -->
+      <header
+        class="fixed top-0 inset-x-0 z-50 h-auto lg:h-[86px] flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 px-4 lg:px-12 py-4 lg:py-0 backdrop-blur-xl bg-gradient-to-b from-navy-950/90 via-navy-950/70 to-transparent border-b border-white/5"
+      >
+        <div class="flex items-center justify-between w-full lg:w-auto">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://i.imgur.com/jCjAJUF.png"
+              alt="Santer Empreendimentos"
+              class="h-6 w-auto object-contain drop-shadow-sm"
+            />
+          </div>
+          <div class="flex items-center gap-2 lg:hidden">
+            <button
+              data-nav-prev
+              aria-label="Anterior"
+              class="w-10 h-10 rounded-full border border-white/10 bg-white/5 text-white flex items-center justify-center disabled:opacity-50 transition-transform active:scale-95"
+            >
+              <i data-lucide="chevron-left" class="w-5 h-5"></i>
+            </button>
+            <button
+              data-nav-next
+              aria-label="Próximo"
+              class="w-10 h-10 rounded-full border border-white/10 bg-white/5 text-white flex items-center justify-center disabled:opacity-50 transition-transform active:scale-95"
+            >
+              <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="nav-scroll" class="flex-1 overflow-x-auto no-scrollbar flex items-center">
+          <nav
+            id="nav-list"
+            aria-label="Seções"
+            class="inline-flex gap-1.5 p-1 rounded-full bg-white/5 border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
+          ></nav>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-2">
+          <button
+            data-nav-prev
+            aria-label="Anterior"
+            class="w-10 h-10 rounded-full border border-white/10 bg-white/5 text-white flex items-center justify-center disabled:opacity-50 transition-transform hover:-translate-y-[1px] hover:bg-white/10"
+          >
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </button>
+          <button
+            data-nav-next
+            aria-label="Próximo"
+            class="w-10 h-10 rounded-full border border-white/10 bg-white/5 text-white flex items-center justify-center disabled:opacity-50 transition-transform hover:-translate-y-[1px] hover:bg-white/10"
+          >
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- ===================== DECK ===================== -->
+      <main
+        id="deck"
+        class="flex-1 w-full flex flex-col lg:flex-row overflow-y-auto lg:overflow-x-auto lg:overflow-y-hidden snap-y lg:snap-x snap-mandatory scroll-smooth no-scrollbar relative z-10"
+      >
+        <!-- ============ 01 · ABERTURA ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-transparent"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="h-full w-full flex flex-col items-center justify-center text-center relative group">
+              <div
+                class="pointer-events-none absolute -inset-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                style="background: radial-gradient(700px circle at center, rgba(56,189,248,0.15), transparent 80%); z-index: 0"
+              ></div>
+              <div class="flex flex-col items-center relative z-10 w-full">
+                <div
+                  class="text-lg sm:text-xl md:text-2xl text-soft-blue tracking-[0.25em] font-light mb-2 uppercase"
+                >
+                  Bem-vindo(a)
+                </div>
+                <h1 class="relative z-10 mb-2">
+                  <span
+                    class="text-[3.5rem] xs:text-[5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] leading-none font-black tracking-tighter text-white drop-shadow-2xl"
+                    >Santer</span
+                  >
+                </h1>
+                <div
+                  class="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-santer-muted font-light tracking-[0.35em] uppercase sm:mt-2"
+                >
+                  Empreendimentos
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 02 · QUEM SOMOS ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 02
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Quem somos</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">02 / 16</div>
+            </div>
+
+            <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8">
+              <div class="glass-card p-8 rounded-3xl">
+                <p class="text-lg text-soft-blue leading-[1.75] mb-6">
+                  Somos uma incorporadora que atua no mercado imobiliário desde
+                  2008, com sede em Guaramirim/SC. Ao longo dessa trajetória, já
+                  entregamos 3.211 unidades, consolidando nossa presença e
+                  compromisso com a realização dos sonhos de nossos clientes.
+                </p>
+                <p class="text-lg text-soft-blue leading-[1.75]">
+                  Nossos empreendimentos são desenvolvidos sempre com foco nas
+                  pessoas, criando espaços inteligentes que unem conforto,
+                  funcionalidade e excelência em cada detalhe. Queremos que cada
+                  projeto seja motivo de orgulho para quem escolhe viver nele.
+                  Nosso diferencial está em um atendimento próximo e dedicado,
+                  aliado ao cumprimento de prazos e à busca constante por
+                  qualidade e modernização em nossas obras.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-4">
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 relative overflow-hidden group">
+                  <strong class="block text-4xl lg:text-5xl font-bold tracking-tight mb-2 relative z-10">3.211</strong>
+                  <p class="text-soft-blue relative z-10">
+                    Unidades entregues em uma trajetória construída com
+                    consistência, proximidade e foco em qualidade.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="p-6 rounded-2xl bg-white/5 border border-white/10 relative overflow-hidden group">
+                    <strong class="block text-3xl font-bold tracking-tight mb-2 relative z-10">17+</strong>
+                    <p class="text-sm text-soft-blue relative z-10">
+                      Anos de história e evolução contínua no mercado imobiliário.
+                    </p>
+                  </div>
+                  <div class="p-6 rounded-2xl bg-white/5 border border-white/10 relative overflow-hidden group">
+                    <strong class="block text-3xl font-bold tracking-tight mb-2 relative z-10">SC</strong>
+                    <p class="text-sm text-soft-blue relative z-10">
+                      Sede em Guaramirim e forte atuação regional estratégica.
+                    </p>
+                  </div>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+                  <h3 class="text-lg font-medium mb-4">O que diferencia a marca</h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Atendimento próximo</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Cumprimento de prazos</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Qualidade</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Modernização</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Atenção aos detalhes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Origem do nome Santer -->
+            <div class="glass-card p-8 rounded-3xl mt-8">
+              <div class="inline-flex items-center gap-3 text-xs uppercase tracking-widest text-santer-muted mb-4">
+                <span class="w-8 h-px bg-white/30"></span>A origem do nome Santer
+              </div>
+              <div class="grid lg:grid-cols-3 gap-6">
+                <p class="text-[0.98rem] text-soft-blue leading-[1.75]">
+                  O nome Santer tem origem em Santa Teresa d'Ávila, referência que
+                  inspirou a fundação da empresa e representa valores como fé,
+                  respeito, integridade, dedicação e compromisso com as pessoas.
+                  Esses princípios fazem parte da história da Santer e seguem
+                  presentes na forma como conduzimos nossas relações e nossos
+                  negócios.
+                </p>
+                <p class="text-[0.98rem] text-soft-blue leading-[1.75]">
+                  Como parte dessa tradição, a empresa realiza periodicamente
+                  momentos de celebração e reflexão, como missas em suas
+                  dependências. Essas iniciativas possuem caráter voluntário e
+                  representam um momento de integração para aqueles que desejarem
+                  participar.
+                </p>
+                <p class="text-[0.98rem] text-soft-blue leading-[1.75]">
+                  A Santer respeita e valoriza a diversidade de crenças, religiões
+                  e convicções individuais. A participação nessas celebrações é
+                  totalmente opcional, e todos os colaboradores são acolhidos com
+                  igualdade, independentemente de sua religião, crença ou da
+                  escolha de participar ou não desses momentos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 03 · CIDADES ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 03
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Cidades de atuação</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">03 / 16</div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+              <div class="glass-card p-8 rounded-3xl">
+                <p class="text-lg text-soft-blue leading-[1.75] mb-8">
+                  A atuação da Santer está presente em cidades estratégicas de
+                  Santa Catarina, como Araquari, Balneário Piçarras, Barra Velha,
+                  Garuva, Guaramirim, Jaraguá do Sul e Penha. Essa presença
+                  regional demonstra a capacidade da empresa de identificar
+                  oportunidades em diferentes mercados e de desenvolver
+                  empreendimentos conectados ao perfil, ao ritmo de crescimento e
+                  ao potencial de valorização de cada localidade.
+                </p>
+                <div id="city-pills" class="flex flex-wrap gap-3"></div>
+              </div>
+
+              <div
+                class="relative min-h-[300px] sm:min-h-[420px] rounded-3xl flex items-center justify-center overflow-hidden border border-white/10 bg-[#e5e3df] shadow-2xl"
+              >
+                <iframe
+                  title="Mapa de atuação da Santer Empreendimentos"
+                  src="https://maps.google.com/maps?q=Guaramirim+-+SC&z=9&output=embed"
+                  class="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div class="absolute inset-0 z-10"></div>
+                <div id="map-markers" class="absolute inset-0 z-20 pointer-events-auto"></div>
+                <div
+                  class="absolute right-6 top-6 max-w-[220px] p-4 rounded-2xl bg-navy-950/90 border border-white/10 backdrop-blur-md pointer-events-none z-30 hidden md:block shadow-2xl"
+                >
+                  <p class="text-[0.8rem] text-soft-blue leading-relaxed">Mapeamento de presença.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 04 · EMPREENDIMENTOS ENTREGUES ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 04
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Empreendimentos entregues</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">04 / 16</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+              <!-- projetos -->
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">SAN PIETRO</h3><span class="text-soft-blue text-base mb-1">128 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">BRISA DO VALLE</h3><span class="text-soft-blue text-base mb-1">87 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">BARRAVIEW</h3><span class="text-soft-blue text-base mb-1">260 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Barra Velha/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">LAVITTA</h3><span class="text-soft-blue text-base mb-1">360 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Penha/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">GRAN VALLE</h3><span class="text-soft-blue text-base mb-1">224 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Jaraguá do Sul/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">MONET</h3><span class="text-soft-blue text-base mb-1">52 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">ANGELUS</h3><span class="text-soft-blue text-base mb-1">224 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Balneário Piçarras/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">SÃO RAFAEL</h3><span class="text-soft-blue text-base mb-1">24 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Balneário Piçarras/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">VICENZA</h3><span class="text-soft-blue text-base mb-1">60 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Garuva/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">LÁ PIETÁ</h3><span class="text-soft-blue text-base mb-1">36 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">JARDINS</h3><span class="text-soft-blue text-base mb-1">209 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">TOSCANA I</h3><span class="text-soft-blue text-base mb-1">216 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Araquari/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">VISTA PARADISO</h3><span class="text-soft-blue text-base mb-1">99 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Penha/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">SÃO MIGUEL</h3><span class="text-soft-blue text-base mb-1">198 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">JARDIM FLORENÇA</h3><span class="text-soft-blue text-base mb-1">264 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">TOSCANA II</h3><span class="text-soft-blue text-base mb-1">253 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Araquari/SC</span></div></div>
+              <div class="hidden lg:block"></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">SÃO GABRIEL</h3><span class="text-soft-blue text-base mb-1">40 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">SAN LORENZO</h3><span class="text-soft-blue text-base mb-1">125 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Guaramirim/SC</span></div></div>
+              <div class="flex flex-col"><h3 class="text-xl font-bold text-white uppercase mb-1">VILLA VENETO</h3><span class="text-soft-blue text-base mb-1">352 unidades</span><div class="flex items-center gap-1.5 text-santer-muted text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Araquari/SC</span></div></div>
+
+              <div class="flex flex-col pt-4 border-t border-white/10 lg:pl-0">
+                <h3 class="text-xl font-bold text-white uppercase mb-1">TOTAL ENTREGUE</h3>
+                <span class="text-soft-blue text-base">3.211 unidades</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 05 · ESTRATÉGIA COMERCIAL ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 05
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Estratégia comercial</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">05 / 16</div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-8 h-auto lg:h-[500px]">
+              <div class="glass-card p-8 rounded-3xl flex flex-col overflow-y-auto no-scrollbar">
+                <h3 class="text-2xl font-bold tracking-tight mb-4">Evolução que comprova amadurecimento</h3>
+                <p class="text-[1.05rem] text-soft-blue leading-[1.75] mb-8">
+                  Os resultados comerciais mostram não apenas aumento de volume,
+                  mas também reposicionamento de mercado, maior percepção de valor
+                  do portfólio e avanço consistente da força comercial da marca.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mt-auto">
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+                    <strong class="block text-3xl font-bold tracking-tight mb-1">R$ 457 mi</strong>
+                    <span class="text-xs text-santer-muted">Vendas em 2024</span>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+                    <strong class="block text-3xl font-bold tracking-tight mb-1">634</strong>
+                    <span class="text-xs text-santer-muted">Unidades vendidas (2024)</span>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+                    <strong class="block text-3xl font-bold tracking-tight mb-1">R$ 720 mil</strong>
+                    <span class="text-xs text-santer-muted">Ticket médio (2024)</span>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+                    <strong class="block text-3xl font-bold tracking-tight mb-1 text-green-400">+893%</strong>
+                    <span class="text-xs text-santer-muted">Crescimento 2018 &rarr; 2024</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-card p-8 rounded-3xl flex flex-col items-stretch pt-6 pb-2">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-8 shrink-0">
+                  <div>
+                    <h3 class="text-xl font-bold">Volume de vendas</h3>
+                    <div class="text-xs uppercase tracking-widest text-santer-muted mt-1">Milhões de reais</div>
+                  </div>
+                  <div class="text-xs uppercase tracking-widest text-santer-muted">2018 - 2025</div>
+                </div>
+                <div class="flex-1 min-h-[300px] w-full">
+                  <div id="sales-chart" class="chart-wrap"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 06 · MISSÃO, VISÃO E VALORES ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 06
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Missão, visão e valores</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">06 / 16</div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <article class="glass-card p-8 rounded-3xl relative overflow-hidden group transition-all duration-500 hover:scale-[1.03] hover:!bg-white hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
+                <div class="absolute top-6 right-6 text-xs uppercase tracking-widest text-white/20 group-hover:text-navy-950/30 transition-colors duration-500">Missão</div>
+                <h3 class="text-2xl font-bold tracking-tight mb-4 mt-8 group-hover:text-navy-950 transition-colors duration-500">Idealizar e construir imóveis que despertem orgulho</h3>
+                <p class="text-soft-blue leading-[1.7] group-hover:text-navy-800 transition-colors duration-500">A missão da Santer é idealizar e construir imóveis que despertem orgulho em quem mora, promovendo também a satisfação dos colaboradores e a sustentabilidade da empresa.</p>
+              </article>
+              <article class="glass-card p-8 rounded-3xl relative overflow-hidden group transition-all duration-500 hover:scale-[1.03] hover:!bg-white hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
+                <div class="absolute top-6 right-6 text-xs uppercase tracking-widest text-white/20 group-hover:text-navy-950/30 transition-colors duration-500">Visão</div>
+                <h3 class="text-2xl font-bold tracking-tight mb-4 mt-8 group-hover:text-navy-950 transition-colors duration-500">Ser a primeira opção em qualidade de vida</h3>
+                <p class="text-soft-blue leading-[1.7] group-hover:text-navy-800 transition-colors duration-500">A visão da empresa aponta para ser a primeira opção em empreendimentos que proporcionam qualidade de vida nas regiões onde atua.</p>
+              </article>
+              <article class="glass-card p-8 rounded-3xl relative overflow-hidden group transition-all duration-500 hover:scale-[1.03] hover:!bg-white hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
+                <div class="absolute top-6 right-6 text-xs uppercase tracking-widest text-white/20 group-hover:text-navy-950/30 transition-colors duration-500">Valores</div>
+                <h3 class="text-2xl font-bold tracking-tight mb-4 mt-8 group-hover:text-navy-950 transition-colors duration-500">Uma forma responsável, humana e consistente de crescer</h3>
+                <p class="text-soft-blue leading-[1.7] mb-6 group-hover:text-navy-800 transition-colors duration-500">Ética, comprometimento, transparência, agilidade, valorização, respeito ao meio ambiente e às pessoas mostram que o crescimento tem responsabilidade.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 07 · DIRETORIA ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 07
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Diretoria Santer</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">07 / 16</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <article class="glass-card p-4 rounded-3xl flex flex-col gap-4 items-center text-center group">
+                <div class="w-full aspect-[3/4] rounded-2xl bg-white/5 border border-white/10 overflow-hidden relative">
+                  <img src="https://imgur.com/CqZ41XC.jpg" alt="Fernando Nilson da Silva" class="absolute inset-0 w-full h-full object-cover" />
+                </div>
+                <div class="pb-2">
+                  <h3 class="text-lg font-bold mb-1">Fernando Nilson da Silva</h3>
+                  <div class="text-xs uppercase tracking-widest text-santer-muted">Presidente do Conselho</div>
+                </div>
+              </article>
+              <article class="glass-card p-4 rounded-3xl flex flex-col gap-4 items-center text-center group">
+                <div class="w-full aspect-[3/4] rounded-2xl bg-white/5 border border-white/10 overflow-hidden relative">
+                  <img src="https://imgur.com/W8JlvKZ.jpg" alt="Mari Deise Stringari" class="absolute inset-0 w-full h-full object-cover" />
+                </div>
+                <div class="pb-2">
+                  <h3 class="text-lg font-bold mb-1">Mari Deise Stringari</h3>
+                  <div class="text-xs uppercase tracking-widest text-santer-muted">Diretoria Financeira</div>
+                </div>
+              </article>
+              <article class="glass-card p-4 rounded-3xl flex flex-col gap-4 items-center text-center group">
+                <div class="w-full aspect-[3/4] rounded-2xl bg-white/5 border border-white/10 overflow-hidden relative">
+                  <img src="https://imgur.com/l5BPh3V.jpg" alt="Joslaine Stringari" class="absolute inset-0 w-full h-full object-cover" />
+                </div>
+                <div class="pb-2">
+                  <h3 class="text-lg font-bold mb-1">Joslaine Stringari</h3>
+                  <div class="text-xs uppercase tracking-widest text-santer-muted">Diretoria Administrativa</div>
+                </div>
+              </article>
+              <article class="glass-card p-4 rounded-3xl flex flex-col gap-4 items-center text-center group">
+                <div class="w-full aspect-[3/4] rounded-2xl bg-white/5 border border-white/10 overflow-hidden relative">
+                  <img src="https://imgur.com/Pc2nhDu.jpg" alt="Eduardo Schuster" class="absolute inset-0 w-full h-full object-cover" />
+                </div>
+                <div class="pb-2">
+                  <h3 class="text-lg font-bold mb-1">Eduardo Schuster</h3>
+                  <div class="text-xs uppercase tracking-widest text-santer-muted">Diretoria Executiva</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 08 · VIVENDO A CULTURA SANTER ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 08
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Vivendo a Cultura Santer</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">08 / 16</div>
+            </div>
+
+            <p class="max-w-4xl text-sm md:text-base lg:text-lg text-soft-blue leading-[1.75] mb-10 shrink-0">
+              A cultura da Santer é construída todos os dias pelas pessoas que
+              fazem parte dela. Ao longo do ano, promovemos ações que fortalecem
+              nossos valores, estimulam o desenvolvimento, reconhecem conquistas e
+              aproximam as equipes. Mais do que eventos, essas iniciativas refletem
+              o nosso compromisso com um ambiente de trabalho acolhedor,
+              colaborativo e em constante evolução.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              <article class="glass-card p-6 md:p-7 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 border border-white/10 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors mb-4"><i data-lucide="coffee" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                <h3 class="text-lg md:text-xl font-bold leading-tight mb-2">Café Mensal</h3>
+                <p class="text-sm text-white/75 leading-relaxed">Encontro entre colaboradores e liderança para compartilhar resultados, novidades e fortalecer a comunicação.</p>
+              </article>
+              <article class="glass-card p-6 md:p-7 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 border border-white/10 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors mb-4"><i data-lucide="gift" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                <h3 class="text-lg md:text-xl font-bold leading-tight mb-2">Celebração de Aniversários</h3>
+                <p class="text-sm text-white/75 leading-relaxed">Valorizamos os momentos especiais dos nossos colaboradores. As comemorações seguem um padrão definido pela empresa, garantindo que todos sejam reconhecidos com o mesmo cuidado e carinho.</p>
+              </article>
+              <article class="glass-card p-6 md:p-7 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 border border-white/10 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors mb-4"><i data-lucide="heart-handshake" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                <h3 class="text-lg md:text-xl font-bold leading-tight mb-2">Campanhas Solidárias</h3>
+                <p class="text-sm text-white/75 leading-relaxed">Ações sociais e campanhas voltadas ao engajamento e responsabilidade social.</p>
+              </article>
+              <article class="glass-card p-6 md:p-7 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 border border-white/10 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors mb-4"><i data-lucide="award" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                <h3 class="text-lg md:text-xl font-bold leading-tight mb-2">Reconhecimento por Tempo de Casa</h3>
+                <p class="text-sm text-white/75 leading-relaxed">Celebramos os colaboradores que completam marcos importantes de tempo de empresa, reconhecendo sua dedicação e contribuição para a construção da história da Santer.</p>
+              </article>
+              <article class="glass-card p-6 md:p-7 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 border border-white/10 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors mb-4"><i data-lucide="sparkles" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                <h3 class="text-lg md:text-xl font-bold leading-tight mb-2">Ações de Endomarketing</h3>
+                <p class="text-sm text-white/75 leading-relaxed">Ao longo do ano realizamos campanhas, ações comemorativas, datas especiais, integrações e iniciativas voltadas ao bem-estar e ao fortalecimento da nossa cultura.</p>
+              </article>
+              <article class="glass-card p-6 md:p-7 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 border border-white/10 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors mb-4"><i data-lucide="graduation-cap" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                <h3 class="text-lg md:text-xl font-bold leading-tight mb-2">Desenvolvimento Contínuo</h3>
+                <p class="text-sm text-white/75 leading-relaxed">Acreditamos que aprender faz parte da nossa evolução. Por isso, disponibilizamos treinamentos, trilhas de aprendizagem, feedbacks, avaliações de desempenho e programas de desenvolvimento para apoiar o crescimento profissional de cada colaborador.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 09 · PREMIAÇÕES E RECONHECIMENTOS ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 09
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Orgulho de Fazer Parte</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">09 / 16</div>
+            </div>
+
+            <div class="mb-8">
+              <p class="text-sm md:text-base text-white/70 max-w-4xl leading-relaxed">
+                Nossas conquistas refletem o esforço diário das nossas equipes por
+                evolução operacional, inovação e máxima qualidade de entrega.
+                Clique em cada selo, prêmio ou certificação para obter mais
+                detalhes.
+              </p>
+            </div>
+
+            <div
+              id="awards-grid"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 overflow-y-auto no-scrollbar max-h-[55vh] pr-1 py-1"
+            ></div>
+          </div>
+        </section>
+
+        <!-- ============ 10 · VÍDEO INSTITUCIONAL ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 10
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Vídeo Institucional</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">10 / 16</div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 h-auto lg:h-[500px]">
+              <div
+                data-video="https://www.youtube.com/embed/5khIcCWFikQ?autoplay=1"
+                data-video-title="Vídeo Institucional"
+                class="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0 rounded-[2rem] bg-gradient-to-br from-navy-800/80 to-navy-950/80 border border-white/10 shadow-2xl overflow-hidden flex items-center justify-center group cursor-pointer"
+              >
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_50%)] opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute top-6 left-6 inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-navy-950/60 border border-white/10 text-white font-medium text-sm backdrop-blur-md z-20">Vídeo institucional</div>
+                <button class="relative z-10 w-24 h-24 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                  <i data-lucide="play" class="w-8 h-8 text-white ml-1.5 fill-white"></i>
+                </button>
+              </div>
+
+              <div
+                data-video="https://www.youtube.com/embed/zkbyELu1O4s?autoplay=1"
+                data-video-title="Jeito Santer de Ser"
+                class="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0 rounded-[2rem] bg-gradient-to-br from-navy-800/80 to-navy-950/80 border border-white/10 shadow-2xl overflow-hidden flex items-center justify-center group cursor-pointer"
+              >
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_0%,_transparent_50%)] opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute top-6 left-6 inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-navy-950/60 border border-white/10 text-white font-medium text-sm backdrop-blur-md z-20">Jeito Santer de Ser</div>
+                <button class="relative z-10 w-24 h-24 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                  <i data-lucide="play" class="w-8 h-8 text-white ml-1.5 fill-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 11 · LINHA DO TEMPO ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 11
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Linha do tempo</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">11 / 16</div>
+            </div>
+
+            <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-8 mb-12">
+              <p class="max-w-3xl text-lg text-soft-blue leading-[1.75]">
+                A evolução da Santer é marcada por marcos que mostram um
+                crescimento consistente. A empresa cresce com estratégia, amadurece
+                com experiência e amplia sua presença com segurança.
+              </p>
+              <div class="flex gap-3 shrink-0">
+                <button data-tl-left class="w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center hover:bg-white/15 transition-colors cursor-pointer group">
+                  <i data-lucide="chevron-left" class="w-6 h-6 text-white"></i>
+                </button>
+                <button data-tl-right class="w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center hover:bg-white/15 transition-colors cursor-pointer group">
+                  <i data-lucide="chevron-right" class="w-6 h-6 text-white"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="timeline-scroll" class="w-full overflow-x-auto no-scrollbar pb-8 cursor-grab active:cursor-grabbing">
+              <div class="min-w-max flex gap-6 px-1 relative">
+                <div class="absolute top-[21px] left-6 right-6 h-0.5 bg-gradient-to-r from-white/10 via-white/40 to-white/10"></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2008</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Início das atividades e nascimento da trajetória da Santer no mercado imobiliário.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2013</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Entrada da Josi na diretoria, reforçando o ciclo de crescimento e consolidação.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2014</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Entrega do primeiro empreendimento Prime, ampliando a percepção de valor da marca.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2018</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Nova sede em Guaramirim e entrada do Eduardo na diretoria, com novo patamar de estrutura.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2020</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Vista Paradiso marca um novo ciclo de presença e consistência no portfólio entregue.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2021</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Lavitta e Barra View reforçam expansão, maturidade e leitura estratégica de mercado.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2023</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Fun e Viverde demonstram avanço de portfólio e continuidade de crescimento.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2024</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Breeze e Feel consolidam a empresa como marca em movimento, expansão e evolução.</p></div></div>
+                <div class="relative pt-[42px] w-[300px]"><div class="absolute top-3 left-6 w-5 h-5 rounded-full bg-white ring-[8px] ring-white/10"></div><div class="glass-card p-6 rounded-2xl min-h-[200px] hover:-translate-y-1 transition-transform"><div class="text-3xl font-bold tracking-tight mb-4">2026</div><p class="text-soft-blue leading-relaxed text-[0.95rem]">Lavivitta e Barraview são entregues, consolidando uma experiência e trajetória construída ao longo dos anos.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 12 · SEDE GUARAMIRIM ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 12
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Sede Guaramirim</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">12 / 16</div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 h-auto lg:h-full lg:min-h-[500px]">
+              <div class="relative rounded-[2rem] bg-gradient-to-br from-navy-800/80 to-navy-950/80 border border-white/10 shadow-2xl overflow-hidden min-h-[300px] sm:min-h-[400px] group">
+                <div class="absolute inset-0 bg-[url('https://i.imgur.com/FvEyeYT.jpeg')] bg-cover bg-center opacity-60 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+                <div class="absolute top-6 left-6 inline-flex px-4 py-2 rounded-full bg-navy-950/80 border border-white/10 text-xs tracking-[0.14em] uppercase text-soft-blue backdrop-blur-md">Guaramirim, SC</div>
+                <div class="absolute right-6 bottom-6 p-6 rounded-3xl bg-navy-950/80 border border-white/10 backdrop-blur-xl min-w-[200px]">
+                  <strong class="block text-4xl tracking-tight font-bold mb-2">1.200 m²</strong>
+                  <span class="text-sm text-santer-muted leading-relaxed block max-w-[28ch]">Estrutura inaugurada em 2018 e ampliada em 2025 para sustentar o crescimento da operação.</span>
+                </div>
+              </div>
+
+              <div class="glass-card p-8 rounded-3xl flex flex-col justify-center">
+                <p class="text-lg text-soft-blue leading-[1.75] mb-6">
+                  A sede da Santer em Guaramirim representa a estrutura que sustenta
+                  o crescimento da empresa. O espaço reúne equipes multifuncionais,
+                  integrando os principais pilares do negócio.
+                </p>
+                <p class="text-lg text-soft-blue leading-[1.75] mb-8">
+                  Mais do que uma sede corporativa, esse ambiente simboliza
+                  organização, integração e capacidade de gestão, refletindo a
+                  força de uma operação ampla.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                  <div class="p-5 rounded-2xl bg-white/5 border border-white/10">
+                    <strong class="block text-3xl font-bold tracking-tight mb-2">1.100+</strong>
+                    <p class="text-sm text-soft-blue">Colaboradores movimentados direta e indiretamente.</p>
+                  </div>
+                  <div class="p-5 rounded-2xl bg-white/5 border border-white/10">
+                    <strong class="block text-3xl font-bold tracking-tight mb-2">10</strong>
+                    <p class="text-sm text-soft-blue">Áreas integradas para dar fluidez à operação.</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Administração</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Engenharia</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Projetos</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">RH</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Financeiro</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Marketing</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Compras</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Financiamentos</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Legalização</span>
+                  <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-soft-blue">Contratos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 13 · BENEFÍCIOS ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 13
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Benefícios</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">13 / 16</div>
+            </div>
+
+            <p class="max-w-3xl text-sm md:text-base lg:text-lg text-soft-blue leading-[1.75] mb-8 shrink-0">
+              A experiência Santer também é construída de dentro para fora. A
+              estrutura de benefícios reforça um posicionamento claro de cuidado
+              com o bem-estar, a saúde e o desenvolvimento das pessoas.
+            </p>
+
+            <div id="benefits-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"></div>
+          </div>
+        </section>
+
+        <!-- ============ 14 · DIREITOS E DEVERES ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 14
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Direitos e Deveres</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">14 / 16</div>
+            </div>
+
+            <div class="max-w-4xl shrink-0 mb-10">
+              <p class="text-sm md:text-base lg:text-lg text-white/90 leading-[1.75] mb-4">
+                Na Santer, acreditamos que um ambiente de trabalho saudável se
+                constrói com clareza, respeito e responsabilidade compartilhada.
+                Cada colaborador é parte essencial dessa jornada, e compreender
+                seus direitos e deveres fortalece não apenas a rotina operacional,
+                mas também a cultura que sustenta nossos resultados.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-soft-blue leading-[1.75]">
+                Pontualidade, organização, comunicação transparente e postura
+                profissional são pilares fundamentais para mantermos a excelência
+                em nossas entregas.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              <!-- Horário de Trabalho -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="clock" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Horário de Trabalho</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed">A jornada de trabalho estabelecida pela empresa é conforme a jornada contratual, sendo essencial para o bom andamento das atividades, a harmonia entre as equipes e para a organização dos processos.</p>
+                </div>
+              </article>
+
+              <!-- Registro do Ponto -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="fingerprint" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Registro do Ponto</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed mb-4">O controle de jornada é realizado por leitor biométrico e o registro deve ser feito obrigatoriamente:</p>
+                  <ul class="space-y-2 mb-4">
+                    <li class="flex items-center gap-2 text-sm text-white/90"><div class="w-1.5 h-1.5 rounded-full bg-soft-blue"></div>No início da jornada</li>
+                    <li class="flex items-center gap-2 text-sm text-white/90"><div class="w-1.5 h-1.5 rounded-full bg-soft-blue"></div>Na saída para o almoço</li>
+                    <li class="flex items-center gap-2 text-sm text-white/90"><div class="w-1.5 h-1.5 rounded-full bg-soft-blue"></div>No retorno do almoço</li>
+                    <li class="flex items-center gap-2 text-sm text-white/90"><div class="w-1.5 h-1.5 rounded-full bg-soft-blue"></div>No encerramento do expediente</li>
+                  </ul>
+                  <p class="text-sm text-soft-blue leading-relaxed">Esse processo garante conformidade com a legislação trabalhista e assegura o correto pagamento de salários, horas extras, banco de horas e demais direitos relacionados.</p>
+                </div>
+              </article>
+
+              <!-- Ausências, Atrasos e Saídas -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="calendar-off" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Ausências, Atrasos e Saídas</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed mb-4">Faltas, atrasos e saídas antecipadas podem acontecer, mas precisam ser <strong>sempre comunicados e justificados</strong> diretamente ao líder imediato.</p>
+                  <p class="text-sm text-white/80 leading-relaxed mb-4">Essa comunicação deve ocorrer de preferência com antecedência, verbalmente ou por escrito.</p>
+                  <p class="text-sm text-soft-blue leading-relaxed">A ausência de comunicação pode gerar impactos operacionais e comprometer o fluxo de trabalho do setor.</p>
+                </div>
+              </article>
+
+              <!-- Home Office e Banco de Horas -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="home" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Home Office e Banco de Horas</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed mb-4">Quando houver necessidade de realização de atividades em home office, o colaborador deverá solicitar ao RH o documento formal de autorização e registro.</p>
+                  <p class="text-sm text-soft-blue leading-relaxed">Esse processo garante a formalização correta da atividade, além do controle adequado da jornada e do banco de horas.</p>
+                </div>
+              </article>
+
+              <!-- NOVO: Frota de Veículos Corporativos -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="car" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Frota de Veículos Corporativos</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed mb-4">A Santer disponibiliza veículos corporativos para utilização em atividades externas relacionadas ao trabalho. Para realizar reservas, basta entrar em contato com a recepção.</p>
+                  <p class="text-sm text-white/80 leading-relaxed mb-4">A utilização dos veículos é destinada exclusivamente a atividades profissionais e exige CNH válida e compatível com a categoria do veículo.</p>
+                  <p class="text-sm text-soft-blue leading-relaxed">O colaborador é responsável pela conservação do veículo durante o período de uso, devendo respeitar as normas de trânsito e devolver o veículo em boas condições, preferencialmente com o tanque abastecido acima da metade, garantindo sua disponibilidade para os próximos usuários.</p>
+                </div>
+              </article>
+
+              <!-- NOVO: Uniforme e Apresentação Profissional -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="shirt" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Uniforme e Apresentação Profissional</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed mb-4">A Santer fornece uniforme para todos os colaboradores, fortalecendo a identidade da empresa. Caso o tamanho desejado não esteja disponível em estoque no momento da admissão, uma nova peça será solicitada e disponibilizada assim que possível.</p>
+                  <p class="text-sm text-white/80 leading-relaxed mb-4">Enquanto aguarda a entrega do uniforme, espera-se que o colaborador mantenha uma apresentação adequada ao ambiente corporativo, utilizando vestimentas compatíveis com a imagem profissional.</p>
+                  <p class="text-sm text-soft-blue leading-relaxed">Não são permitidas roupas excessivamente curtas, transparentes ou inadequadas ao ambiente de trabalho.</p>
+                </div>
+              </article>
+
+              <!-- NOVO: Crachá de Identificação -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="id-card" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Crachá de Identificação</h3>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-6">
+                  <p class="text-sm md:text-base text-white/80 leading-relaxed">O crachá é de uso pessoal e intransferível, sendo um importante instrumento de identificação e controle de acesso às dependências da empresa.</p>
+                  <p class="text-sm text-white/80 leading-relaxed">Sempre que solicitado, o colaborador deverá utilizá-lo de forma visível durante a jornada de trabalho, zelando por sua conservação e comunicando imediatamente ao RH em caso de perda, dano ou necessidade de substituição.</p>
+                  <p class="text-sm text-soft-blue leading-relaxed">O uso correto do crachá contribui para a segurança dos colaboradores, visitantes e do patrimônio da empresa.</p>
+                </div>
+              </article>
+
+              <!-- CCT -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="file-text" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Convenção Coletiva de Trabalho (CCT)</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
+                    <div class="space-y-4">
+                      <div>
+                        <h4 class="text-sm font-bold text-white mb-1.5 uppercase tracking-wider">O que é a CCT?</h4>
+                        <p class="text-xs text-soft-blue leading-relaxed">A Convenção Coletiva de Trabalho é um acordo entre o sindicato da categoria e as empresas do setor. Ela define regras sobre salário, jornada, benefícios e condições de trabalho.</p>
+                      </div>
+                      <div>
+                        <h4 class="text-sm font-bold text-white mb-2 uppercase tracking-wider">O que ela garante?</h4>
+                        <ul class="space-y-1.5">
+                          <li class="flex items-center gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0"></div><span>Piso salarial da categoria</span></li>
+                          <li class="flex items-center gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0"></div><span>Reajustes salariais anuais</span></li>
+                          <li class="flex items-center gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0"></div><span>Regras de jornada e horas extras</span></li>
+                          <li class="flex items-center gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0"></div><span>Benefícios previstos, quando aplicável</span></li>
+                          <li class="flex items-center gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0"></div><span>Condições de trabalho e segurança</span></li>
+                          <li class="flex items-center gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0"></div><span>Outras regras específicas da função ou atividade</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="space-y-4">
+                      <div>
+                        <h4 class="text-sm font-bold text-white mb-2 uppercase tracking-wider">De forma prática:</h4>
+                        <ul class="space-y-1.5">
+                          <li class="flex items-start gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0 mt-1.5"></div><span>A empresa segue as regras definidas na CCT vigente</span></li>
+                          <li class="flex items-start gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0 mt-1.5"></div><span>Essas regras são atualizadas periodicamente, normalmente uma vez por ano</span></li>
+                          <li class="flex items-start gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-soft-blue shrink-0 mt-1.5"></div><span>O RH pode te apoiar em dúvidas a qualquer momento</span></li>
+                        </ul>
+                      </div>
+                      <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+                        <h4 class="text-xs font-bold text-white mb-1 uppercase tracking-wider">Contribuição Negocial / Assistencial</h4>
+                        <p class="text-[10px] text-white/50 mb-2 leading-relaxed">Prevista na CCT da categoria</p>
+                        <div class="flex items-baseline gap-1">
+                          <span class="font-mono text-2xl font-black text-soft-blue">1%</span>
+                          <span class="text-xs text-white/80">ao mês sobre o salário</span>
+                        </div>
+                        <p class="text-[10px] text-white/40 mt-2 leading-relaxed">Aplicável conforme regras da convenção vigente.</p>
+                      </div>
+                    </div>
+                    <div class="space-y-4 flex flex-col justify-between">
+                      <div>
+                        <h4 class="text-sm font-bold text-white mb-1.5 uppercase tracking-wider">Direito de Oposição</h4>
+                        <p class="text-xs text-white/80 leading-relaxed mb-2">O colaborador pode optar por não contribuir. Para isso:</p>
+                        <ul class="space-y-1.5 mb-3">
+                          <li class="flex items-start gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-red-400 shrink-0 mt-1.5"></div><span>A solicitação deve ser feita diretamente ao sindicato</span></li>
+                          <li class="flex items-start gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-red-400 shrink-0 mt-1.5"></div><span>Deve respeitar o prazo definido na CCT</span></li>
+                          <li class="flex items-start gap-2 text-xs text-white/90"><div class="w-1 h-1 rounded-full bg-red-400 shrink-0 mt-1.5"></div><span>Normalmente é feita de forma presencial, conforme orientação do sindicato</span></li>
+                        </ul>
+                        <p class="text-[11px] text-soft-blue leading-relaxed">Caso o colaborador tenha interesse em exercer esse direito, deve procurar o RH para receber as orientações atualizadas de prazo, local e procedimento.</p>
+                      </div>
+                      <div class="pt-4 border-t border-white/10">
+                        <p class="text-xs italic text-soft-blue/90 leading-relaxed">"Nosso compromisso é garantir transparência, cumprimento das normas e apoio para que você entenda seus direitos e deveres desde o início."</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Ausências Legais -->
+              <article class="glass-card p-6 md:p-8 rounded-3xl flex flex-col transition-all duration-300 hover:bg-white/10 border border-white/10 group h-full md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors"><i data-lucide="scale" class="w-6 h-6 md:w-7 md:h-7"></i></div>
+                  <h3 class="text-lg md:text-xl font-bold leading-tight text-white">Ausências Legais</h3>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="mt-2 space-y-4">
+                    <p class="text-sm md:text-base text-white/80 leading-relaxed max-w-4xl">A legislação trabalhista assegura ao colaborador algumas ausências abonadas, ou seja, períodos em que não há prejuízo salarial, desde que devidamente comprovados.</p>
+                    <button id="absences-toggle" class="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white/5 hover:bg-white/10 active:bg-white/15 border border-white/10 hover:border-white/20 transition-all duration-300 rounded-xl text-xs uppercase tracking-wider font-semibold text-white/95 hover:text-white cursor-pointer select-none">
+                      <span data-abs-label>Visualizar ausências permitidas</span>
+                      <i data-lucide="chevron-down" class="w-4 h-4 text-soft-blue"></i>
+                    </button>
+                    <div id="absences-panel" class="hidden">
+                      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 pt-4">
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">01 / Casamento Civil</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Casamento Civil</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed">Até 3 dias úteis consecutivos, contados a partir da certidão de casamento.</p></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">02 / Maternidade</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Licença Maternidade</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed">Até 120 dias, a partir da saída do trabalho.</p></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">03 / Paternidade</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Licença Paternidade</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed mb-3">Atualmente de 5 dias, com ampliação legal prevista para os próximos anos, conforme legislação vigente:</p><div class="space-y-1 bg-white/5 rounded-xl p-2.5 border border-white/5"><div class="flex justify-between text-[11px] font-mono"><span class="text-white/60">A partir de 01/01/2027:</span><span class="text-soft-blue font-bold">10 dias</span></div><div class="flex justify-between text-[11px] font-mono"><span class="text-white/60">Em 2028:</span><span class="text-soft-blue font-bold">15 dias</span></div><div class="flex justify-between text-[11px] font-mono"><span class="text-white/60">Em 2029:</span><span class="text-soft-blue font-bold">20 dias</span></div></div></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">04 / Falecimento</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Falecimento</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed mb-2">Até 2 dias consecutivos, em caso de falecimento de:</p><ul class="space-y-1 bg-white/5 rounded-xl p-2.5 border border-white/5"><li class="flex items-start gap-1.5 text-[11px] text-white/80"><div class="w-1 h-1 rounded-full bg-soft-blue mt-1.5 shrink-0"></div><span class="leading-tight">Cônjuge</span></li><li class="flex items-start gap-1.5 text-[11px] text-white/80"><div class="w-1 h-1 rounded-full bg-soft-blue mt-1.5 shrink-0"></div><span class="leading-tight">Ascendentes, como pais e avós</span></li><li class="flex items-start gap-1.5 text-[11px] text-white/80"><div class="w-1 h-1 rounded-full bg-soft-blue mt-1.5 shrink-0"></div><span class="leading-tight">Descendentes, como filhos</span></li><li class="flex items-start gap-1.5 text-[11px] text-white/80"><div class="w-1 h-1 rounded-full bg-soft-blue mt-1.5 shrink-0"></div><span class="leading-tight">Irmãos</span></li><li class="flex items-start gap-1.5 text-[11px] text-white/80"><div class="w-1 h-1 rounded-full bg-soft-blue mt-1.5 shrink-0"></div><span class="leading-tight">Pessoa que viva sob dependência econômica declarada</span></li></ul></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">05 / Serviço Militar</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Alistamento Militar Obrigatório</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed">Até 2 dias consecutivos.</p></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">06 / Educação</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Vestibular</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed">Ausência permitida nas datas das provas.</p></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between lg:col-span-2"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">07 / Saúde</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Atestado Médico ou Odontológico</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed mb-3">A ausência será abonada pelo período indicado no documento emitido por médico ou dentista, contendo obrigatoriamente:</p><div class="grid grid-cols-2 gap-2 mb-3 bg-white/5 rounded-xl p-2.5 border border-white/5"><div class="flex items-center gap-1.5 text-xs text-white/90"><div class="w-1 h-1 bg-soft-blue rounded-full shrink-0"></div><span>Carimbo</span></div><div class="flex items-center gap-1.5 text-xs text-white/90"><div class="w-1 h-1 bg-soft-blue rounded-full shrink-0"></div><span>Assinatura</span></div><div class="flex items-center gap-1.5 text-xs text-white/90"><div class="w-1 h-1 bg-soft-blue rounded-full shrink-0"></div><span>CRM ou CRO</span></div><div class="flex items-center gap-1.5 text-xs text-white/90"><div class="w-1 h-1 bg-soft-blue rounded-full shrink-0"></div><span>Especialidade do profissional</span></div></div><p class="text-xs md:text-sm text-soft-blue leading-relaxed">O atestado deverá ser entregue ao responsável do setor <strong>em até 24 horas após sua emissão</strong>, pelo colaborador ou por pessoa autorizada. Após esse prazo, o documento poderá perder sua validade.</p></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">08 / Cidadania</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Doação de Sangue</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed">Ausência abonada durante todo o dia, mediante apresentação da declaração da unidade do HEMOSC.</p></div></div>
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-5 transition-all duration-300 hover:bg-white/10 flex flex-col justify-between"><div><span class="text-[10px] md:text-xs text-soft-blue uppercase tracking-widest font-semibold block mb-1">09 / Cidadania</span><h4 class="text-sm md:text-base font-bold text-white mb-1 leading-tight">Mesário Eleitoral</h4><p class="text-xs md:text-sm text-white/70 leading-relaxed">Direito a até 2 dias de folga, previamente acordados entre empresa e colaborador.</p></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 15 · O FUTURO ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-900/60 to-navy-800/40 shadow-inner"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-3 text-sm uppercase tracking-widest text-santer-muted mb-2">
+                  <span class="w-12 h-px bg-white/30"></span>Seção 15
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">O Futuro</h2>
+              </div>
+              <div class="text-sm uppercase tracking-widest text-santer-muted">15 / 16</div>
+            </div>
+
+            <div class="mb-8 shrink-0 max-w-4xl">
+              <p class="text-xs md:text-sm text-soft-blue uppercase tracking-wider font-semibold mb-2">Tecnologia que apoia nossa operação</p>
+              <p class="text-sm md:text-base text-white/90 leading-relaxed">
+                Cada área da Santer utiliza sistemas específicos que apoiam a
+                rotina, a produtividade e a gestão dos processos. Essas ferramentas
+                fazem parte do dia a dia operacional e são fundamentais para
+                garantir agilidade, controle e eficiência em todas as nossas
+                entregas.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] xl:grid-cols-[320px_1fr] gap-6 flex-1 min-h-[300px] lg:max-h-[520px] lg:overflow-hidden">
+              <div class="flex flex-col gap-4 lg:overflow-y-auto no-scrollbar">
+                <div id="tools-cats" class="bg-navy-950/40 border border-white/5 p-2 rounded-2xl flex flex-row lg:flex-col gap-1 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto no-scrollbar shrink-0"></div>
+              </div>
+              <div id="tools-panel" class="bg-navy-900/10 border border-white/5 rounded-3xl p-5 lg:overflow-y-auto no-scrollbar flex flex-col justify-start"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 16 · FECHAMENTO ============ -->
+        <section
+          class="deck-section section-fade w-full h-full flex-none snap-start snap-always relative overflow-y-auto p-6 pt-32 lg:pt-32 lg:p-12 pb-24 flex flex-col no-scrollbar bg-gradient-to-br from-navy-800/40 to-navy-950/20"
+        >
+          <div class="max-w-7xl mx-auto w-full h-full flex flex-col">
+            <div class="h-full flex flex-col justify-center items-center text-center max-w-4xl mx-auto px-4">
+              <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-12">
+                Santer
+                <span class="block text-3xl md:text-4xl lg:text-5xl text-soft-blue font-medium mt-4">Construindo projetos para a sua vida</span>
+              </h2>
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <button data-open-site class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-navy-900 font-bold shadow-xl hover:-translate-y-0.5 transition-transform">
+                  Conhecer mais
+                  <i data-lucide="arrow-right" class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                </button>
+                <button data-back-home class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors">
+                  <i data-lucide="corner-left-up" class="w-5 h-5 transition-transform group-hover:-translate-y-1"></i>
+                  Voltar ao início
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Camada de modais -->
+    <div id="modal-layer" class="modal-layer hidden fixed inset-0 z-[100] flex items-center justify-center p-4"></div>
+
+    <!-- Ícones + scripts (auto-hospedados) -->
+    <script src="lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

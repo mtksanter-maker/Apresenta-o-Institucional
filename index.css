@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #08182b;
+  --color-navy-900: #0a1f37;
+  --color-navy-850: #102844;
+  --color-navy-800: #19324f;
+  --color-navy-700: #254869;
+  --color-navy-650: #2b4869;
+  --color-navy-600: #35587d;
+  --color-soft-blue: #d9e5f2;
+  --color-santer-muted: #b9c8d9;
+
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #08182b;
+    --foreground: #f3f6fa;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply font-sans antialiased;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+
+  /* Global background glow */
+  body::before,
+  body::after {
+    content: "";
+    @apply fixed rounded-full pointer-events-none;
+    z-index: -1;
+    filter: blur(100px);
+    opacity: 0.45;
+  }
+
+  body::before {
+    width: 600px;
+    height: 600px;
+    left: -150px;
+    bottom: -200px;
+    background: rgba(53, 88, 125, 0.22);
+  }
+
+  body::after {
+    width: 500px;
+    height: 500px;
+    right: -100px;
+    top: 50px;
+    background: rgba(105, 150, 196, 0.12);
+  }
+
+  .nav-scroll::-webkit-scrollbar,
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-scroll,
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .glass-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+

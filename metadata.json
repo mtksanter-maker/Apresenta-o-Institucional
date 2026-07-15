@@ -1,0 +1,8 @@
+{
+  "name": "Santer - Manual do Colaborador",
+  "description": "Manual do Colaborador e Apresentação Institucional da Incorporadora Santer",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
