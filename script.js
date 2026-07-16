@@ -628,7 +628,7 @@
       { name: "GitHub", desc: "Plataforma utilizada para hospedagem, versionamento e gerenciamento de código-fonte, permitindo o desenvolvimento colaborativo, controle de versões, documentação de projetos e acompanhamento das entregas da equipe de TI." }
     ]},
     { id: "geral", name: "Sistemas Gerais", icon: "layers", systems: [
-      { name: "Hinc", desc: "Sistema de gestão geral para apoio administrativo, operacional e acompanhamento interno." },
+      { name: "Hinc", desc: "Sistema de gestão geral para apoio administrativo, operacional e acompanhamento interno.", url: "https://plataforma.hinc.com.br/" },
       { name: "Strato", desc: "Apoio a gestão de processos internos e controles administrativos." },
       { name: "Sispro", desc: "Sistema utilizado em rotinas operacionais e administrativas diversas." },
       { name: "Sienge", desc: "ERP da construção civil com integração financeira, administrativa e operacional." }
@@ -672,13 +672,17 @@
           <span class="text-xs text-white/40 font-mono">${count} ${count === 1 ? "sistema cadastrado" : "sistemas cadastrados"}</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          ${cat.systems.map((s) => `
-            <div class="bg-navy-900/40 border border-white/10 p-4 rounded-2xl flex flex-col justify-between hover:border-white/20 hover:bg-navy-800/20 transition-all duration-300 group">
+          ${cat.systems.map((s) => {
+            const tag = s.url ? "a" : "div";
+            const attrs = s.url ? ` href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"` : "";
+            return `
+            <${tag}${attrs} class="bg-navy-900/40 border border-white/10 p-4 rounded-2xl flex flex-col justify-between hover:border-white/20 hover:bg-navy-800/20 transition-all duration-300 group${s.url ? " cursor-pointer" : ""}">
               <div>
                 <h4 class="font-bold text-white text-sm md:text-base mb-1.5 group-hover:text-soft-blue transition-colors duration-300 flex items-center justify-between gap-2"><span>${esc(s.name)}</span><i data-lucide="chevron-right" class="w-4 h-4 text-white/10 group-hover:text-soft-blue group-hover:translate-x-0.5 transition-all duration-300"></i></h4>
                 <p class="text-xs md:text-sm text-white/70 leading-relaxed">${esc(s.desc)}</p>
               </div>
-            </div>`).join("")}
+            </${tag}>`;
+          }).join("")}
         </div>`;
       if (window.lucide) window.lucide.createIcons();
     }
